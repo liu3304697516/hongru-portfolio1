@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Active Flutter Control | Hongru Liu</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+<header>
+  <h1>Hongru Liu</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="projects.html">Projects</a>
+    <a href="resume.pdf">Resume</a>
+    <a href="justification_memo.pdf">Justification Memo</a>
+  </nav>
+</header>
+
+<main>
+  <h2>Active Flutter Control System for UAS Wing</h2>
+  <p class="muted">Aug 2023 - Dec 2023</p>
+  <div>
+    <span class="tag">MATLAB</span><span class="tag">Simulink</span><span class="tag">PID Control</span>
+    <span class="tag">Accelerometer Feedback</span><span class="tag">Piezoelectric Actuators</span>
+  </div>
+
+  <figure class="figure">
+    <img src="assets/flutter-control.svg" alt="UAS wing flutter control schematic with uncontrolled and controlled response curves" />
+    <figcaption>The model used sensor feedback and actuation to suppress unstable wing vibration before it reached unsafe amplitudes.</figcaption>
+  </figure>
+
+  <section class="callout">
+    <strong>Project objective:</strong> develop and validate a simulated control system that suppresses wing flutter for an
+    unmanned aircraft wing at the required 118.3 km/h airspeed.
+  </section>
+
+  <h3>Introduction</h3>
+  <p>
+    Wing flutter is dangerous because aerodynamic forces can feed energy into a structure until oscillations grow beyond
+    safe limits. For unmanned aircraft, active control offers a way to extend safe operation without relying only on
+    heavier passive structures. This project tested whether sensor feedback and piezoelectric actuation could suppress
+    flutter in simulation.
+  </p>
+
+  <h3>Method</h3>
+  <p>
+    I built a control-oriented wing dynamics model in MATLAB/Simulink, then implemented a PID-based controller using
+    accelerometer feedback. Piezoelectric actuators were modeled as the active input that could counter the wing's
+    oscillatory response. Root locus and Bode analyses were used to understand stability margins and tune the controller.
+  </p>
+
+  <h3>Results</h3>
+  <p>
+    Simulation results showed effective oscillation suppression at the target airspeed. Comparing the controlled and
+    uncontrolled behavior helped confirm that the controller improved damping and kept the response within a safer range.
+    The analysis also showed why frequency-domain validation is valuable for flutter problems: a time response alone does
+    not fully explain stability risk.
+  </p>
+
+  <h3>My Contribution</h3>
+  <ul>
+    <li>Developed the MATLAB/Simulink simulation workflow for wing dynamics and active control.</li>
+    <li>Implemented PID control with accelerometer feedback and piezoelectric actuator input.</li>
+    <li>Validated stability using root locus and Bode analysis.</li>
+    <li>Connected simulation results to the practical goal of suppressing flutter at 118.3 km/h.</li>
+  </ul>
+
+  <p>
+    <a class="btn" href="projects.html">Back to Projects</a>
+    <a class="btn" href="project2.html">Prev: MCT Control</a>
+    <a class="btn" href="project4.html">Next: Algae Removal</a>
+  </p>
+</main>
+</body>
+</html>

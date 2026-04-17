@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Hexapod Dancing Robot | Hongru Liu</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+<header>
+  <h1>Hongru Liu</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="projects.html">Projects</a>
+    <a href="resume.pdf">Resume</a>
+    <a href="justification_memo.pdf">Justification Memo</a>
+  </nav>
+</header>
+
+<main>
+  <h2>Mechatronic Design: Hexapod Dancing Robot</h2>
+  <p class="muted">Jan 2026 - May 2026</p>
+  <div>
+    <span class="tag">Fusion 360</span><span class="tag">Mechatronics</span><span class="tag">Actuator Selection</span>
+    <span class="tag">Machining</span><span class="tag">Prototype Integration</span>
+  </div>
+
+  <figure class="figure">
+    <img src="assets/hexapod-demo-1.jpg" alt="Hexapod robot prototype being tested in the lab with team members nearby" />
+    <figcaption>The project centered on turning a playful robot concept into a buildable mechanical system with a rigid aluminum frame, large leg linkages, and accessible electronics packaging.</figcaption>
+  </figure>
+
+  <section class="callout">
+    <strong>Project objective:</strong> build a six-legged dancing robot that could coordinate repeated leg motions while remaining compact,
+    rigid enough for assembly, and practical to fabricate with available shop tools and purchased components.
+  </section>
+
+  <h3>Introduction</h3>
+  <p>
+    Small walking robots are useful teaching platforms because they make abstract mechatronic design choices visible:
+    linkage geometry affects motion, motor selection affects stability, and packaging affects whether the robot can be
+    assembled and repaired. This project used a hexapod dancing robot to explore those tradeoffs in a physical prototype.
+  </p>
+
+  <h3>Design Process</h3>
+  <p>
+    I iteratively modeled the robot in Fusion 360, moving from broad chassis concepts to detailed leg linkages,
+    drivetrain placement, and electronics packaging. Each revision tested a known design question: whether the chassis
+    left enough clearance for moving legs, whether the motor and gearbox footprint fit the body, and whether structural
+    panels could be machined and assembled without creating tolerance conflicts.
+  </p>
+  <p>
+    I compared multiple chassis, drivetrain, and leg architectures using CAD studies and physical mockups. Motor and
+    gearbox options were evaluated by torque, speed, backlash, footprint, and mounting needs. The final direction used an
+    integrated drivetrain solution so the robot could coordinate repeated leg motion with fewer assembly conflicts.
+  </p>
+
+  <h3>Build Photos</h3>
+  <div class="photo-grid">
+    <figure class="figure wide-photo">
+      <img src="assets/hexapod-build-1.jpg" alt="Team assembling the aluminum hexapod frame and leg modules on the lab floor" />
+      <figcaption>Full-frame assembly and leg-module alignment during the build phase.</figcaption>
+    </figure>
+    <figure class="figure">
+      <img src="assets/hexapod-assembly-1.jpg" alt="Hexapod robot with laptop and electronics mounted inside the frame during testing" />
+      <figcaption>Integrated prototype with laptop, wiring, power electronics, and the structural frame in place.</figcaption>
+    </figure>
+    <figure class="figure">
+      <img src="assets/hexapod-electronics-1.jpg" alt="Top view of the hexapod electronics deck with wiring and controllers installed" />
+      <figcaption>Electronics deck layout showing controller wiring, power supply, and accessible mounting space.</figcaption>
+    </figure>
+    <figure class="figure wide-photo">
+      <img src="assets/hexapod-leg-linkage-1.jpg" alt="Close-up of the aluminum hexapod leg linkage and bolted joints on a workbench" />
+      <figcaption>Close-up of the bolted aluminum linkage, where joint spacing and bracket alignment were critical.</figcaption>
+    </figure>
+  </div>
+
+  <h3>My Contribution</h3>
+  <ul>
+    <li>Created repeated CAD revisions for chassis layout, leg linkage geometry, motor placement, and component packaging.</li>
+    <li>Managed prototype sourcing for motors, gearboxes, brackets, fasteners, and wood panels.</li>
+    <li>Machined structural and electronics mounting panels through drilling, cutting, milling, and wood board fabrication.</li>
+    <li>Supported mechanical-electrical integration, actuator mounting, gearbox alignment, and subsystem debugging.</li>
+  </ul>
+
+  <h3>Evaluation</h3>
+  <p>
+    The prototype was evaluated through fit checks, assembly trials, and repeated debugging cycles. The most effective
+    design decisions were the ones that reduced interference between legs, motors, and panels while keeping the frame
+    stiff enough for synchronized motion. The project also showed that early packaging studies save time during final
+    integration because purchased components rarely match ideal CAD space exactly.
+  </p>
+
+  <p>
+    <a class="btn" href="projects.html">Back to Projects</a>
+    <a class="btn" href="project2.html">Next: MCT Control</a>
+  </p>
+</main>
+</body>
+</html>

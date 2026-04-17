@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Modern Control Theory Project | Hongru Liu</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+<header>
+  <h1>Hongru Liu</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="projects.html">Projects</a>
+    <a href="resume.pdf">Resume</a>
+    <a href="justification_memo.pdf">Justification Memo</a>
+  </nav>
+</header>
+
+<main>
+  <h2>Modern Control Theory: Autonomous Vehicle &amp; Quadrotor Control</h2>
+  <p class="muted">Aug 2025 - Dec 2025</p>
+  <div>
+    <span class="tag">MATLAB</span><span class="tag">Simulink</span><span class="tag">Python</span>
+    <span class="tag">PID</span><span class="tag">LQR</span><span class="tag">Adaptive Control</span>
+  </div>
+
+  <figure class="figure">
+    <img src="assets/mct-vehicle-tracking.png" alt="Autonomous vehicle simulation with cross-track error and waypoint progress overlay" />
+    <figcaption>The vehicle-control simulation tracked waypoint progress and cross-track error while the car followed a planned route.</figcaption>
+  </figure>
+
+  <section class="callout">
+    <strong>Project objective:</strong> design and test controllers that help autonomous ground vehicles and quadrotor drones
+    track desired trajectories while maintaining stability and robustness in simulation.
+  </section>
+
+  <h3>Introduction</h3>
+  <p>
+    Autonomous systems need controllers that translate a desired path into stable motion. The social value of this work
+    is reliability: safer drones and ground vehicles require predictable responses before they are tested in the real
+    world. Simulation made it possible to compare control strategies before hardware risk was introduced.
+  </p>
+
+  <h3>Method</h3>
+  <p>
+    I designed and implemented model-based control algorithms for two classes of systems: autonomous ground vehicles and
+    quadrotor drones. For quadrotors, I developed attitude and position controllers using PID, LQR, and adaptive control
+    concepts with dynamic modeling and state feedback. For ground vehicles, I implemented lateral and longitudinal
+    controllers for path following and maneuvering, including discrete-time control logic.
+  </p>
+  <p>
+    The project also included planning and simulation tasks that supported control evaluation. I used A* path planning on
+    cost maps to generate feasible routes around obstacles, then evaluated how the vehicle followed those routes using
+    error plots and trajectory overlays. Drone work used a simulated 3D environment to test how controller behavior
+    changed under different flight and tracking conditions.
+  </p>
+
+  <h3>Simulation Evidence</h3>
+  <div class="photo-grid diagram-grid">
+    <figure class="figure wide-photo">
+      <img src="assets/mct-drone-simulation.png" alt="Quadrotor simulation environment with furniture, pallets, and obstacles" />
+      <figcaption>3D simulation environment used to test drone navigation and controller response around obstacles.</figcaption>
+    </figure>
+    <figure class="figure wide-photo">
+      <img src="assets/mct-state-plots.png" alt="Vehicle control plots showing trajectory, steering, velocity, yaw, slip angle, and control force over time" />
+      <figcaption>Time-domain plots for trajectory tracking, steering angle, velocity, yaw response, slip angle, and control force.</figcaption>
+    </figure>
+    <figure class="figure">
+      <img src="assets/mct-track-plot.png" alt="Planned track and tracked path overlay for autonomous vehicle control" />
+      <figcaption>Reference path and tracked route comparison for vehicle path-following performance.</figcaption>
+    </figure>
+    <figure class="figure">
+      <img src="assets/mct-astar-costmap-1.png" alt="A star path planning result on costmap 1" />
+      <figcaption>A* planning on a mapped environment with start, goal, and generated path.</figcaption>
+    </figure>
+    <figure class="figure">
+      <img src="assets/mct-astar-costmap-2.png" alt="A star path planning result on costmap 2" />
+      <figcaption>A* path planning through a constrained route with obstacle boundaries.</figcaption>
+    </figure>
+    <figure class="figure">
+      <img src="assets/mct-astar-costmap-3.png" alt="A star path planning result on costmap 3" />
+      <figcaption>A* route around a central obstacle, showing how planning connects start and goal while avoiding blocked space.</figcaption>
+    </figure>
+  </div>
+
+  <h3>Results</h3>
+  <p>
+    Controller performance was evaluated through time-domain simulations and stability analysis in MATLAB/Simulink and
+    Python. The simulations clarified how controller gains affected settling behavior, tracking error, and robustness.
+    LQR and state-feedback methods were especially useful for connecting model structure with predictable closed-loop
+    response, while PID designs offered a clear baseline for tuning and comparison.
+  </p>
+  <p>
+    The route-tracking and A* plots gave concrete ways to evaluate whether the controller was doing more than simply
+    moving the vehicle forward. Cross-track error, waypoint completion, trajectory overlays, and state histories made it
+    possible to judge path accuracy, transient response, and stability across different map conditions.
+  </p>
+
+  <h3>My Contribution</h3>
+  <ul>
+    <li>Implemented vehicle lateral and longitudinal controllers for path following and maneuvering.</li>
+    <li>Developed quadrotor flight-control logic for attitude and position tracking.</li>
+    <li>Used MATLAB/Simulink and Python simulations to compare controller response and stability.</li>
+    <li>Analyzed simulation results to identify gain choices and modeling assumptions that improved tracking behavior.</li>
+  </ul>
+
+  <p>
+    <a class="btn" href="projects.html">Back to Projects</a>
+    <a class="btn" href="project1.html">Prev: Hexapod</a>
+    <a class="btn" href="project3.html">Next: Flutter Control</a>
+  </p>
+</main>
+</body>
+</html>
