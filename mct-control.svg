@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" role="img" aria-labelledby="title desc">
+  <title id="title">Autonomous vehicle and quadrotor control schematic</title>
+  <desc id="desc">A simplified control-system diagram connecting reference trajectory, controller, plant dynamics, and feedback.</desc>
+  <rect width="900" height="520" fill="#f7faf8"/>
+  <path d="M90 380 C220 260 350 285 470 190 C585 98 710 110 820 70" fill="none" stroke="#2f7d6d" stroke-width="12" stroke-linecap="round"/>
+  <g fill="#ffffff" stroke="#202124" stroke-width="6">
+    <rect x="78" y="128" width="180" height="84" rx="8"/>
+    <rect x="355" y="128" width="190" height="84" rx="8"/>
+    <rect x="642" y="128" width="180" height="84" rx="8"/>
+  </g>
+  <g font-family="Arial, Helvetica, sans-serif" font-size="24" fill="#202124" text-anchor="middle">
+    <text x="168" y="178">Reference</text>
+    <text x="450" y="178">PID / LQR</text>
+    <text x="732" y="166">Vehicle</text>
+    <text x="732" y="194">Dynamics</text>
+  </g>
+  <g stroke="#202124" stroke-width="6" fill="none" marker-end="url(#arrow)">
+    <path d="M258 170 H355"/>
+    <path d="M545 170 H642"/>
+    <path d="M732 212 V300 H168 V212"/>
+  </g>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#202124"/>
+    </marker>
+  </defs>
+  <g fill="#f0c65c" stroke="#202124" stroke-width="5">
+    <path d="M650 342 L710 320 L770 342 L710 365 Z"/>
+    <circle cx="650" cy="342" r="22"/>
+    <circle cx="770" cy="342" r="22"/>
+    <circle cx="710" cy="320" r="22"/>
+    <circle cx="710" cy="365" r="22"/>
+  </g>
+  <g fill="#2f7d6d">
+    <rect x="140" y="356" width="118" height="38" rx="8"/>
+    <circle cx="166" cy="399" r="16"/>
+    <circle cx="232" cy="399" r="16"/>
+  </g>
+  <text x="450" y="70" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="34" fill="#202124">Modern Control Theory Project</text>
+  <text x="450" y="462" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#5f6368">trajectory tracking, stability, robustness, simulation validation</text>
+</svg>

@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" role="img" aria-labelledby="title desc">
+  <title id="title">Individual wheel rotation system schematic</title>
+  <desc id="desc">A simplified vehicle platform showing four independently actuated wheel modules.</desc>
+  <rect width="900" height="520" fill="#f7faf8"/>
+  <rect x="230" y="150" width="440" height="220" rx="28" fill="#dbece5" stroke="#202124" stroke-width="8"/>
+  <rect x="330" y="200" width="240" height="120" rx="12" fill="#ffffff" stroke="#2f7d6d" stroke-width="7"/>
+  <g fill="#202124">
+    <circle cx="225" cy="160" r="56"/>
+    <circle cx="675" cy="160" r="56"/>
+    <circle cx="225" cy="360" r="56"/>
+    <circle cx="675" cy="360" r="56"/>
+  </g>
+  <g fill="#f0c65c" stroke="#202124" stroke-width="6">
+    <circle cx="225" cy="160" r="28"/>
+    <circle cx="675" cy="160" r="28"/>
+    <circle cx="225" cy="360" r="28"/>
+    <circle cx="675" cy="360" r="28"/>
+  </g>
+  <g stroke="#2f7d6d" stroke-width="8" fill="none" marker-end="url(#arrow)">
+    <path d="M160 98 C205 62 250 62 292 98"/>
+    <path d="M608 98 C653 62 698 62 740 98"/>
+    <path d="M160 422 C205 458 250 458 292 422"/>
+    <path d="M608 422 C653 458 698 458 740 422"/>
+  </g>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#2f7d6d"/>
+    </marker>
+  </defs>
+  <text x="450" y="72" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="34" fill="#202124">Individual Wheel Rotation</text>
+  <text x="450" y="462" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#5f6368">independent modules for maneuverability and traction</text>
+</svg>
