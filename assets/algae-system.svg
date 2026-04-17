@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" role="img" aria-labelledby="title desc">
+  <title id="title">Hazardous algae removal system schematic</title>
+  <desc id="desc">A solar-powered circulation system moving cooler deep water toward an algae bloom layer.</desc>
+  <rect width="900" height="520" fill="#f7faf8"/>
+  <rect y="180" width="900" height="340" fill="#dbece5"/>
+  <rect y="180" width="900" height="70" fill="#88bfae"/>
+  <g fill="#3f8d45" opacity="0.8">
+    <circle cx="110" cy="210" r="16"/>
+    <circle cx="158" cy="224" r="11"/>
+    <circle cx="690" cy="212" r="15"/>
+    <circle cx="748" cy="226" r="12"/>
+    <circle cx="792" cy="204" r="10"/>
+  </g>
+  <rect x="390" y="92" width="120" height="70" rx="6" fill="#f0c65c" stroke="#202124" stroke-width="6"/>
+  <line x1="450" y1="162" x2="450" y2="380" stroke="#202124" stroke-width="10"/>
+  <path d="M450 380 C360 330 360 278 450 240 C540 278 540 330 450 380 Z" fill="#ffffff" stroke="#2f7d6d" stroke-width="8"/>
+  <g fill="none" stroke="#2f7d6d" stroke-width="9" stroke-linecap="round">
+    <path d="M450 360 C420 320 420 290 450 255"/>
+    <path d="M450 360 C480 320 480 290 450 255"/>
+    <path d="M450 360 C450 318 450 292 450 255"/>
+  </g>
+  <path d="M565 368 C670 322 730 296 800 250" fill="none" stroke="#125c72" stroke-width="10" stroke-linecap="round" marker-end="url(#arrow)"/>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#125c72"/>
+    </marker>
+  </defs>
+  <text x="450" y="60" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="34" fill="#202124">Hazardous Algae Removal</text>
+  <text x="450" y="472" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#5f6368">solar power, deep-water circulation, flow validation</text>
+</svg>
